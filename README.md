@@ -1,19 +1,18 @@
 # Проект EcoWasteClassifier
 
-Добро пожаловать в проект EcoWasteClassifier! Это полное, сквозное решение на основе машинного обучения для классификации отходов по категориям переработки. Создано в рамках экологического проекта, оно демонстрирует transfer learning с использованием TensorFlow и Keras для эффективной сортировки изображений мусора.
+Добро пожаловать в проект EcoWasteClassifier! Это сквозное решение на основе машинного обучения для классификации отходов по категориям переработки. Создано в рамках экологического проекта, оно демонстрирует transfer learning с использованием TensorFlow и Keras для эффективной сортировки изображений мусора.
 
 ![Пример AI-системы сортировки отходов в аэропорту SEA](https://www.portseattle.org/sites/default/files/2023-12/231220_Oscar_AI_16x9_WEB.jpg)
 
 ## Технический стек
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python_3.10-3776AB?logo=python&logoColor=white" alt="Python 3.10" />
-  <img src="https://img.shields.io/badge/Jupyter_Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
-  <img src="https://img.shields.io/badge/numpy-013243?logo=numpy&logoColor=white" alt="NumPy" />
-  <img src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white" alt="pandas" />
-  <img src="https://img.shields.io/badge/matplotlib-11557C?logo=plotly&logoColor=white" alt="matplotlib" />
-  <img src="https://img.shields.io/badge/seaborn-4C72B0?logoColor=white" alt="seaborn" />
-  <img src="https://img.shields.io/badge/plotly-3F4F75?logo=plotly&logoColor=white" alt="plotly" />
+  <a href="https://www.python.org"><img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12" /></a>
+  <a href="https://www.tensorflow.org"><img src="https://img.shields.io/badge/TensorFlow-2.19-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow 2.19" /></a>
+  <a href="https://keras.io"><img src="https://img.shields.io/badge/Keras-3.10-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras 3.10" /></a>
+  <a href="https://numpy.org"><img src="https://img.shields.io/badge/NumPy-2.0-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy 2.0" /></a>
+  <a href="https://matplotlib.org"><img src="https://img.shields.io/badge/Matplotlib-3.10-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib 3.10" /></a>
+  <a href="https://colab.research.google.com"><img src="https://img.shields.io/badge/Google Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Google Colab" /></a>
 </p>
 
 ## Структура проекта
