@@ -4,11 +4,23 @@
 
 ![Пример AI-системы сортировки отходов в аэропорту SEA](https://www.portseattle.org/sites/default/files/2023-12/231220_Oscar_AI_16x9_WEB.jpg)
 
+## Технический стек
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python_3.10-3776AB?logo=python&logoColor=white" alt="Python 3.10" />
+  <img src="https://img.shields.io/badge/Jupyter_Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter Notebook" />
+  <img src="https://img.shields.io/badge/numpy-013243?logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white" alt="pandas" />
+  <img src="https://img.shields.io/badge/matplotlib-11557C?logo=plotly&logoColor=white" alt="matplotlib" />
+  <img src="https://img.shields.io/badge/seaborn-4C72B0?logoColor=white" alt="seaborn" />
+  <img src="https://img.shields.io/badge/plotly-3F4F75?logo=plotly&logoColor=white" alt="plotly" />
+</p>
+
 ## Структура проекта
 - `README.md`: Этот файл — ваш гид по всему.
-- `train.ipynb`: Полный ноутбук для обучения (на основе предоставленного кода).
+- `MIPHI_project_practice_Liuboshenko_v2.ipynb`: Полный ноутбук для обучения.
 - `inference.ipynb`: Специальный ноутбук для загрузки и тестирования предобученной модели на новых изображениях.
-- `EcoWasteClassifier.h5`: Файл предобученной модели (компактный размер, ~12 МБ).
+- `EcoWasteClassifier.h5`: Файл предобученной модели (компактный размер, ~17 МБ).
 - `requirements.txt`: Список зависимостей для простой установки.
 - `TODO.md`: Планируемые улучшения и будущая работа.
 - `examples/`: Папка с несколькими примерами изображений для тестирования (например, cardboard.jpg, glass.jpg — добавьте плейсхолдеры или опишите, как добавить их).
@@ -47,16 +59,15 @@
 ### Шаг 1: Клонирование репозитория
 Сначала загрузите код на свой локальный компьютер:
 ```
-git clone https://github.com/yourusername/EcoWasteClassifier.git
-cd EcoWasteClassifier
+git clone https://github.com/Liuboshenko/EcoWasteClassifier_MIPHI_project_practice.git
+cd EcoWasteClassifier_MIPHI_project_practice.git
 ```
-(Замените `yourusername` на ваше реальное имя пользователя GitHub при создании репозитория.)
 
 ### Шаг 2: Создание виртуального окружения
-Чтобы изолировать зависимости, настройте виртуальное окружение Python (рекомендуется Python 3.8+):
+Чтобы изолировать зависимости, настройте виртуальное окружение Python3.12:
 ```
-python -m venv env
-source env/bin/activate  # На Windows: env\Scripts\activate
+python -m venv env3.12
+source env/bin/activate  
 ```
 
 ### Шаг 3: Установка зависимостей
@@ -64,11 +75,11 @@ source env/bin/activate  # На Windows: env\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
-Это включает TensorFlow, Keras, Matplotlib, NumPy и другие essentials. Никаких лишних — все легковесно.
+Это включает TensorFlow, Keras, Matplotlib, NumPy и другие essentials
 
 ### Шаг 4: Обучение модели (опционально)
 Если хотите переобучить с нуля:
-1. Откройте `train.ipynb` в Jupyter Notebook или Google Colab.
+1. Откройте `MIPHI_project_practice_Liuboshenko_v2.ipynb` в Jupyter Notebook или Google Colab.
 2. Запускайте ячейки последовательно (как описано в комментариях ноутбука).
 3. Модель скачает датасет, обучит, построит графики и сохранит как `EcoWasteClassifier.h5`.
 4. Файл модели автоматически скачается для удобства.
@@ -86,8 +97,6 @@ pip install -r requirements.txt
 
 Пример вывода: График с изображением и заголовком вроде "ПЛАСТИК\nУверенность: 92.5%".
 
-Эта настройка позволяет любому попробовать модель без переобучения — просто загрузите и предскажите.
-
 ### Запуск в Google Colab
 - Загрузите файлы репозитория в Colab.
 - Установите зависимости с помощью `!pip install -r requirements.txt`.
@@ -104,9 +113,7 @@ predict_waste()  # Запросит загрузку
 ```
 
 ## Вклад в проект
-Не стесняйтесь форкать и улучшать! Проверьте `TODO.md` для идей.
+Проверьте `TODO.md` для идей.
 
 ## Лицензия
 MIT License — свободно используйте, модифицируйте и распространяйте.
-
-Создано с страстью к чистой планете. Вопросы? Откройте issue на GitHub.
