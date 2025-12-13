@@ -32,19 +32,17 @@
 ## Что мы достигли
 - **Датасет**: TrashNet (2527 изображений по 6 классам: cardboard, glass, metal, paper, plastic, trash).
 
-![Примеры изображений из датасета TrashNet: картон, стекло, металл](https://www.researchgate.net/publication/349188057/figure/fig1/AS:11431281415452702@1746034652591/Images-from-the-TrashNet-dataset-a-cardboard-b-glass-c-metal-d-paper-e.tif)
-
-![Образцы из TrashNet: стекло, бумага, картон](https://www.researchgate.net/publication/349188057/figure/fig1/AS:11431281415452702@1746034652591/Images-from-the-TrashNet-dataset-a-cardboard-b-glass-c-metal-d-paper-e.tif)
+![Примеры изображений из датасета TrashNet: картон, стекло, металл](images/example_trashNet.png){width=75%}
 
 - **Архитектура модели**: Transfer learning на базе MobileNetV2 (предобученной на ImageNet), с добавлением кастомных плотных слоев для классификации.
 
-![Диаграмма архитектуры MobileNetV2](https://www.researchgate.net/publication/369624227/figure/fig8/AS:11431281131552328@1680145503560/The-architecture-of-the-MobileNetV2-with-a-sample-input-image-and-19-residual-bottleneck.png)
+![Диаграмма архитектуры MobileNetV2](images/architercture.png){width=75%}
 
 - **Обучение**: Аугментация данных, ранняя остановка и снижение скорости обучения для надежной производительности. Обучение на GPU для эффективности.
 
-![Графики кривых обучения: точность и потери на тренировке и валидации](https://machinelearningmastery.com/wp-content/uploads/2018/12/Example-of-Train-and-Validation-Learning-Curves-Showing-a-Training-Dataset-the-May-be-too-Small-Relative-to-the-Validation-Dataset.png)
+![Графики кривых обучения: точность ](images/accuracy.png){width=75%}
 
-![Линии потерь и точности по эпохам в много-классовой классификации](https://machinelearningmastery.com/wp-content/uploads/2018/11/Line-Plots-of-KL-Divergence-Loss-and-Classification-Accuracy-over-Training-Epochs-on-the-Blobs-Multi-Class-Classification-Problem.png)
+![Линии потерь](images/loss.png){width=75%}
 
 - **Выход**: Сохраненная модель Keras (.h5), готовая к развертыванию. Она предсказывает с оценкой уверенности и визуализирует результаты.
 - **Удобство использования**: Простые в запуске ноутбуки для обучения и инференса, плюс графики для анализа производительности.
